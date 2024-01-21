@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div class="main">
+        <div class="heading">
+            <div class="sub-heading">
+                <i class="ti-bolt-alt thunder"></i>
+                <b>Jackson</b>
+                <hr>
+                <b>Electronics</b>
+            </div>
+        </div>
+        <div class="title">
+            <b>Registration Form</b>
+            <br> <br>
+            <p>Register your Jackson Electionics product here</p>
+        </div>
+        <div class="form">
+            <div class="first-last-name">
+                <label class="wid_120px" for="firstname" >First Name: </label>
+                <input type="text" name="firstname-input" id="wid-80px">
+                <label class="wid_80px" for="lasttname" >Last Name: </label>
+                <input type="text" name="firstname-input" id="wid-80px">
+            </div>
+            <div class="Address">
+                <label class="wid_120px inline" for="address1" >Address #1: </label>
+                <input type="text" class="add1-input" id="wid-280px">
+                <label class="wid_120px inline" for="address1">Address #2: </label>
+                <input type="text" class="add1-input" id="wid-280px">
+            </div>
+            <div class="Location">
+                <label class="wid_120px" for="">City: </label>
+                <input  class="wid-100px" type="text">
+                <label  for="">State: </label>
+                <input class="wid-25px" type="text">
+                <label for="">Zip</label>
+                <input class="wid-50px dem" type="texts">
+                <label class="wid_120px" for="">Country</label>
+                <input class="wid-100px" type="text" placeholder="United States">
+            </div>
+            <br>
+            <hr>
+            <br>
+            <label class="wid_120px" >Product: </label>
+            <select name="Product" id="Product" class="wid_120px">
+                <option value="1">ScanMaster</option>
+                <option value="2">ScanMaster II</option>
+                <option value="3">LaserPrint 1000</option>
+                <option value="4">LaserPrint 5000</option>
+                <option value="5">Print/scan 150</option>
+            </select>
+            <br>
+            <label class="wid_120px" for="">Date Purchased: </label>
+            <input  class="wid-100px xuongdongSerial" type="text">
+            <label class="wid_120px" for="">Serial#: </label>
+            <input class="wid-100px" type="text">
+
+            <div class="used-for">
+                <label for="Used-for">Used for: </label>
+                <form style="margin-left: 122px;" >
+                    <input type="radio"name="choic">
+                    <label class="wid_120px" for="">Home</label>
+
+                    <input type="radio"name="choic">
+                    <label style="width: 150px;" class="wid_120px"for="">Education Insitution</label> <br>
+
+                    <input type="radio"name="choic">
+                    <label class="wid_120px"for="">Business</label>
+
+                    <input type="radio"name="choic">
+                    <label class="wid-120px" for="">Orther</label> <br>
+
+                    <input type="radio"name="choic">
+                    <label class="wid_120px"for="">Govemment</label>
+                </form>
+            </div>
+
+            <div class="system">
+                <label for="system-option">System(check all that apply): </label>
+                <div style="margin-left: 240px;" >
+                    <input type="checkbox"name="choic">
+                    <label class="wid_120px" for="">Windows</label>
+
+                    <input type="checkbox"name="choic">
+                    <label for="">UNIX</label> <br>
+
+                    <input type="checkbox"name="choic">
+                    <label class="wid_120px"for="">Macintosh</label>
+
+                    <input type="checkbox"name="choic">
+                    <label class="wid-120px" for="">Orther</label> <br>
+
+                </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <!-- comment -->
+            <div class="comment">
+                <label for="comments">Comments?:</label>
+                <textarea name="comments" id="comments" cols="50" rows="6"></textarea> <br>
+            </div>
+
+            <!-- buttons -->
+            <div class="btn">
+                <input type="submit" value="click to register" class="btn">
+                <input type="submit" value="click to cancel" class="btn">
+            </div>
+        </div>
+
+    </div>
+    <style>
+        .btn{
+            position: relative;
+            margin-top: 50px;
+            text-align: center;
+            border-radius: 3px;
+        }
+        .comment{
+            position: relative;
+        }
+        .comment>textarea{
+            position: absolute;
+            right: 0;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main{
+            margin: auto;
+            width: 1000px;
+            height:800px;
+            position: relative;
+            background-color: rgba(61, 117, 146, 0.5);
+        }
+        .sub-heading{
+            width: 200px;
+            margin: auto;
+            background-color: aqua;
+            border: 2px solid whitesmoke;
+            border-radius: 12px;
+            position: relative;
+            box-shadow: 5px 5px 10px white;
+            box-sizing: border-box;
+        }
+        .thunder{
+            position: absolute;
+            top:0;
+            left: 0;
+        }
+        .heading{
+            text-align: center;
+            
+        }
+        .heading b,i{
+            font-size:30px;
+        }
+        .title{
+            margin-top: 30px;
+            text-align: center;
+        }
+        .title b{
+            font-size: 25px;
+        }
+
+        .form{
+            position: absolute;
+            left: 150px;
+            width: 500px;
+           
+        }
+       
+        .last-name{
+            margin-left: 5px;
+    
+        }
+        #wid-80px{
+            width: 80px;
+        }
+        #wid-280px{
+            width: 150px;
+        }
+        #wid-280px.add1-input{
+            margin-right: 200px;
+        }
+        .wid_120px{
+            display: inline-block;
+            width: 120px;
+        }
+        .wid-100px{
+            width: 100px;
+        }
+        .dem{
+            margin-right: 100px;
+        }
+        .wid-25px{
+            width: 25px;
+        }
+        .wid-50px{
+            width: 50px;
+        }
+        .xuongdongSerial{
+            margin-right: 200px;
+        }
+        .used-for label{
+            display: inline-block;
+            width: 120px;
+        }
+
+        
+    </style>
+</body>
+</html>
